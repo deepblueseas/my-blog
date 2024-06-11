@@ -8,23 +8,30 @@
 </head>
 
 <body>
-  
+
   <h1>Welcome</h1>
   <h2>What's on your mind?</h2>
-  <!-- basic form from w3 schools and mdn -->
-  <form> 
-    <label for="username">username:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <label for="title">blog post title:</label><br>
-    <input type="text" id="title" name="title"><br>
-    <label for="content">blog post content:</label><br>
-    <input type="text" id="content" name="content">
+
+  <form>
+    <div class="input-group">
+      <label for="username">username:</label><br>
+      <input type="text" id="username" name="username" placeholder="username"><br>
+    </div>
+    <div class="input-group">
+      <label for="title">blog post title:</label><br>
+      <input type="text" id="title" name="title" placeholder="blog title goes here"><br>
+    </div>
+    <div class="input-group">
+      <label for="blogContent">blog post content:</label><br>
+      <input type="text" id="blogContent" name="blogContent" placeholder="what's on your mind">
+    </div>
     <div class="submit-btn">
-      <input type="submit" value="Submit" />
+      <button id="submitEL" type="button">Submit</button>
     </div>
   </form>
 
   <script src="assets/js/form.js"></script>
 
 </body>
+
 </html>
