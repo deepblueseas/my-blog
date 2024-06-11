@@ -1,32 +1,34 @@
 # my-blog
-Challenge 04.  Creating a light/dark mode, two-page website that includes a content form.
+**Challenge 04**.  Creating a light/dark mode, two-page website that includes a content form.
 
-## User Story from CWRU
-AS A marketing student
-I WANT a personal blog
-SO THAT I can showcase my thoughts and experiences
+## User Story from the CWRU 
+> - As a marketing student
+> - I want a personal blog
+> - So that I can showcase my thoughts and experiences
 
-## Acceptance Criteria from CWRU
-GIVEN a personal blog
-WHEN I load the app,
-THEN I am presented with the landing page containing a form with labels and inputs for username, blog title, and blog content.
-WHEN I submit the form,
-THEN blog post data is stored to localStorage.
-WHEN the form submits,
-THEN I am redirected to the posts page.
-WHEN I enter try to submit a form without a username, title, or content,
-THEN I am presented with a message that prompts me to complete the form.
-WHEN I view the posts page,
-THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
-WHEN I click the light mode/dark mode toggle,
-THEN the page content's styles update to reflect the selection.
-WHEN I click the "Back" button,
-THEN I am redirected back to the landing page where I can input more blog entries.
-WHEN I view the main content,
-THEN I am presented with a list of blog posts that are pulled from localStorage.
-WHEN I view localStorage,
-THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
-WHEN I take a closer look at a single blog entry in the list,
-THEN I can see the title, the content, and the author of the post.
-WHEN I view the footer,
-THEN I am presented with a link to the developer's portfolio.
+## Expected Outcomes (as listed in the CWRU Acceptance Criteria)
+1. When I load the app:
+    - A landing page containing a form for a. username, b. blog-title, and c. blog-content appears.
+    - If I try to submit form with an input missing, a prompt appears to tell user to complete all parts of the form
+
+2. When I submit the form successfully:
+    - I am redirected to the posts page
+
+3. When I view the posts page
+    - I see a header with light/dark mode toggle and a "back" button
+        - When I click the "back" button I am redirected to the landing page
+            - Where I am able to add more blog posts
+
+4. When I view the main content
+    - I see a list of blog posts pulled from local storage
+
+5. When I view the local storage
+    - I see a JSON array of blog post objects including USERNAME, TITLE, and CONTENT
+
+6. When I look at a single blog entry
+    - I see the TITLE, CONTENT, and AUTHOR/USERNAME
+
+7. When I view the footer
+    - I am presented with a link to dev porfolio
+
+
