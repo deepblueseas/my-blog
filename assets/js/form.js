@@ -9,6 +9,7 @@ submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
 
     // retrieving input values from the blog form
+    // on index.html
     const username = usernameInput.value;
     const title = titleInput.value;
     const blogContent = blogContentInput.value;
@@ -48,7 +49,7 @@ submitBtn.addEventListener('click', function (event) {
     window.location.href = 'blog.html';
 });
 
-// we use .parse and .stringify when retrieving and adding data 
+// we use .parse and .stringify when retrieving and adding data
 // bc local storage can only deal with strings
 // but arrays and objects are more complex
 
