@@ -1,6 +1,53 @@
+/* the darkmode only extends down as far as screen view */
+
+body, html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    height: 100%;
+    background-color: rgb(147, 161, 175);
+    color: black;
+   
+}
+
+#myBlog {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.card h2 {
+    color: grey;
+    font-size: small;
+    text-align: center;
+}
+
+.card p {
+    color: black;
+}
+
 .dark {
     background-color: rgb(36, 14, 47);
-    color: whitesmoke;
+}
+
+.dark #myBlog {
+    color: rgb(162, 251, 162);
 }
 
 

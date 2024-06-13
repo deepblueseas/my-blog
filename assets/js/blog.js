@@ -15,6 +15,9 @@ function displayPosts() {
 
     posts.forEach(function (post) {
 
+        const card = document.createElement('div');
+        card.className = 'card';
+
         const postTitle = document.createElement('h1');
         const postUsername = document.createElement('h2');
         const postContent = document.createElement('p');
@@ -23,9 +26,10 @@ function displayPosts() {
         postUsername.textContent = `By: ${post.username}`;
         postContent.textContent = post.blogContent;
 
-        body.appendChild(postTitle);
-        body.appendChild(postUsername);
-        body.appendChild(postContent);
+        card.appendChild(postTitle);
+        card.appendChild(postUsername);
+        card.appendChild(postContent);
+        body.appendChild(card);
 
     });
 }
