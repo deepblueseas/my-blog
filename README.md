@@ -32,6 +32,16 @@
     - I am presented with a link to dev porfolio
 
 
+## Application
+
+- link to deployed application: https://deepblueseas.github.io/my-blog/
+
+- view of the index.html and the blog.html in lightmode:
+>- [index.html] <img src="assets\images\my-blog1.jpg">
+>- [blog.html] <img src= "assets\images\my-blog2.jpg">
+
+
+
 
 ## Comments
 
