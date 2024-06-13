@@ -1,24 +1,122 @@
-:root {
+/* I know that the border along the left right and top doesn't change 
+with the darkmode */
+
+body, html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-} 
+    margin: 5px;
+    padding: 5px;
+    height: 100%;
+    background-color: rgb(147, 161, 175);
+}
 
 .container {
-    text-align: center;
-    background: #fff;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+#left-container, #right-container {
+    width: 50%;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rbga(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(147, 161, 175);
+    border-right: 2px solid #ccc;
 }
 
 #welcome-container {
+    color: rgb(57, 52, 52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: palegoldenrod;
+    margin: 20px;
+}
+
+#right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1px;
+}
+
+#darkmodeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#blogForm {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .input-group {
-    margin: 40px 0;
+    margin: 15px 0;
+    padding: 25px;
+}
+
+.input {
+    width: 500px;
+}
+
+#submitEL {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitEL:hover {
+    background-color: palegoldenrod;
+}
+
+.dark {
+    background-color: rgb(36, 14, 47);
+    color: whitesmoke;
+}
+
+.dark .container {
+    background-color: rgb(36, 14, 47);
+    border-top: 2px solid rgb(36, 14, 47);
+}
+
+.dark #left-container {
+    background-color: rgb(36, 14, 47);
+    color: whitesmoke;
+}
+
+.dark .circle {
+    background-color: rgb(162, 251, 162);
+}
+
+.dark #welcome-container {
+    color: black;
+}
+
+.dark #right-container {
+    background-color: rgb(36, 14, 47);
+    color: whitesmoke;
 }

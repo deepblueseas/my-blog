@@ -1,0 +1,14 @@
+.dark {
+    background-color: rgb(36, 14, 47);
+    color: whitesmoke;
+}
+
+
+#darkmodeToggleBlog {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

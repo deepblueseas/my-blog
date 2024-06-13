@@ -31,3 +31,28 @@ function displayPosts() {
 }
 
 displayPosts();
+
+
+
+
+// lightmode/darkmode
+const themeswitcherBlog = document.getElementById('darkmodeToggleBlog')
+const containerBlog = document.getElementById('containerBlog');
+
+let modeBlog = 'light';
+themeswitcherBlog.addEventListener('click', function () {
+    console.log('click');
+    if (modeBlog === 'light') {
+        modeBlog = 'dark';
+        containerBlog.classList.add('dark');
+        containerBlog.classList.remove('light');
+    }
+
+    else {
+        modeBlog = 'light';
+        containerBlog.classList.add('light');
+        containerBlog.classList.remove('dark');
+    }
+
+});
+
