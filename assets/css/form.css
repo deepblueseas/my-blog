@@ -94,6 +94,26 @@ body, html {
     background-color: palegoldenrod;
 }
 
+#portfolio {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+#portfolio a {
+    color: black;
+    text-decoration: none;
+}
+
+#portfolio a:hover{
+    text-decoration: underline;
+    color: palegoldenrod;
+}
+
 .dark {
     background-color: rgb(36, 14, 47);
     color: whitesmoke;
@@ -120,4 +140,9 @@ body, html {
 .dark #right-container {
     background-color: rgb(36, 14, 47);
     color: whitesmoke;
+}
+
+.dark #portfolio a{
+    color: rgb(162, 251, 162);
+    text-decoration: none;
 }
