@@ -32,3 +32,9 @@
     - I am presented with a link to dev porfolio
 
 
+
+## Comments
+
+- Some of the dark-mode elements are glitchy, and I could have spent more time styling the blog page, but overall I think it was successful
+
+

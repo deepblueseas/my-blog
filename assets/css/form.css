@@ -114,6 +114,9 @@ body, html {
     color: palegoldenrod;
 }
 
+
+/* darkmode below */
+
 .dark {
     background-color: rgb(36, 14, 47);
     color: whitesmoke;
